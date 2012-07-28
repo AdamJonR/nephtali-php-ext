@@ -198,7 +198,7 @@ PHP_FUNCTION(nephtali_markup_get_sections)
 		char *err_message[200];
 		// throw an exception because the number of sections is not valid
 		if (name == NULL) {
-			sprintf(err_message, "The number of sections found for the %s comment region were invalid.", type); 
+			sprintf(err_message, "The number of sections found for the %s comment region were invalid.", type);
 			zend_throw_exception(zend_exception_get_default(TSRMLS_C), err_message, 0 TSRMLS_CC);
 			return;
 		} else {
