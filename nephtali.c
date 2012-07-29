@@ -61,7 +61,7 @@ zend_module_entry nephtali_module_entry = {
 	PHP_RSHUTDOWN(nephtali), /* Replace with NULL if there's nothing to do at request end */
 	PHP_MINFO(nephtali),
 #if ZEND_MODULE_API_NO >= 20010901
-	"0.1", /* Replace with version number for your extension */
+	"1", /* Replace with version number for your extension */
 #endif
 	STANDARD_MODULE_PROPERTIES
 };
