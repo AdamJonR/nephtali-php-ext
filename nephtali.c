@@ -169,7 +169,7 @@ PHP_FUNCTION(nephtali_markup_get_sections)
 	ZVAL_STRINGL(zmarkup, markup, markup_len, 1);
 	// define delimiter_temp and because of usage context being limited to html comments, don't worry about binary safety and just use strcat
 	strcpy(delimiter_temp, comment_open);
-	if (name == NULL) {
+	if (name_len == 0) {
 		delimiter_temp_len = comment_open_len + type_len + comment_close_len;
 		strcat(delimiter_temp, type);
 		strcat(delimiter_temp, comment_close);
